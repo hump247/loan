@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Replace 'your_data.csv' with the actual path to your data file
 data = pd.read_csv('info.csv')
 
-@app.route('/get_loan_message', methods=['GET'])
+@app.route('/get_loan_message', methods=['POST'])
 def get_loan_message():
     index_number = request.args.get('index_number')
 
