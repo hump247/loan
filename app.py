@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Load your data into a pandas DataFrame
 # Replace 'your_data.csv' with the actual path to your data file
-data = pd.read_csv('file1.csv')
+data = pd.read_csv('info.csv')
 
 @app.route('/get_loan_message', methods=['GET'])
 def get_loan_message():
